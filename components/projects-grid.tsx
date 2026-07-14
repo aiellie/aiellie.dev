@@ -102,7 +102,7 @@ export function ProjectsGrid({ className }: { className?: string }) {
         <h2 className="text-sm font-semibold tracking-tight">Projects</h2>
         <span className="text-xs text-muted-foreground">
           {visibleCount === visibleProjects.length
-            ? `${visibleProjects.length} shipped`
+            ? `${visibleProjects.length} displayed`
             : `${visibleCount} of ${visibleProjects.length}`}
         </span>
       </div>

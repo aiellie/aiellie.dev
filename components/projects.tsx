@@ -61,7 +61,7 @@ export function Projects({ className }: { className?: string }) {
       <div className="flex items-baseline justify-between">
         <h2 className="text-sm font-semibold tracking-tight">Projects</h2>
         <span className="text-xs text-muted-foreground">
-          {projects.length} shipped
+          {projects.length} displayed
         </span>
       </div>
 
