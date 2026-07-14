@@ -5,6 +5,7 @@ import { SiteHeader } from "@/components/site-header"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils"
 import { SiteFooter } from "@/components/site-footer"
+import { AiellieChat } from "@/components/aiellie-chat"
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'})
 
@@ -31,6 +32,7 @@ export default function RootLayout({
             <main className="flex flex-1 flex-col">{children}</main>
             <SiteFooter />
           </div>
+          <AiellieChat />
         </ThemeProvider>
       </body>
     </html>

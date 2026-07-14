@@ -1,5 +1,6 @@
-import { cn } from "@/lib/utils"
+import { AnalyticCards } from "@/components/analytic-cards"
 import { StatusBadge } from "@/components/status-badge"
+import { cn } from "@/lib/utils"
 
 export function HeroSection({ className }: { className?: string }) {
   return (
@@ -17,6 +18,7 @@ export function HeroSection({ className }: { className?: string }) {
         Designer and developer building fast, thoughtful things for the web.
         Currently based in New York/Remote.
       </p>
+      <AnalyticCards />
     </div>
   )
 }
