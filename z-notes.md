@@ -1,5 +1,5 @@
 git add .
-git commit -m "avatar"
+git commit -m "modeswitcher"
 git push origin main
 
 pnpm run build

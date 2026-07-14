@@ -23,7 +23,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cn("antialiased", fontMono.variable, "font-sans", geist.variable)}
     >
-      <body>
+      <body >
         <ThemeProvider>
           <div className="flex min-h-svh flex-col">
             <SiteHeader />

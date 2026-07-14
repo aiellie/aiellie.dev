@@ -60,7 +60,7 @@ export function SocialLinks() {
                     ? { target: "_blank", rel: "noopener noreferrer" }
                     : {})}
                   className={cn(
-                    buttonVariants({ variant: "ghost", size: "icon-xs" }),
+                    buttonVariants({ variant: "ghost", size: "icon-sm" }),
                     "text-muted-foreground hover:text-foreground"
                   )}
                 />

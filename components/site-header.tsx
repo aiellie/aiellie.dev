@@ -3,7 +3,7 @@ import Link from "next/link"
 import { Latency } from "@/components/latency"
 import { NyClock } from "@/components/ny-clock"
 import { SocialLinks } from "@/components/social-links"
-
+import { ModeSwitcher } from "@/components/mode-switcher"
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50  bg-background/80 backdrop-blur-md">
@@ -27,6 +27,8 @@ export function SiteHeader() {
           <Latency />
           <span className="h-3 w-px bg-border" />
           <SocialLinks />
+          <span className="h-3 w-px bg-border" />
+          <ModeSwitcher />
         </div>
       </div>
     </header>

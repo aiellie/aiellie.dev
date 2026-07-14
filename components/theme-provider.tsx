@@ -7,12 +7,21 @@ function ThemeProvider({
   children,
   ...props
 }: React.ComponentProps<typeof NextThemesProvider>) {
+  // next-themes injects a blocking <script> for theme flash prevention.
+  // React 19 warns when that script re-renders on the client — use a
+  // non-executable type after hydration; SSR still emits the real script.
+  const scriptProps =
+    typeof window === "undefined"
+      ? undefined
+      : ({ type: "application/json" } as const)
+
   return (
     <NextThemesProvider
       attribute="class"
       defaultTheme="system"
       enableSystem
       disableTransitionOnChange
+      scriptProps={scriptProps}
       {...props}
     >
       <ThemeHotkey />
