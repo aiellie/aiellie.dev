@@ -1,5 +1,5 @@
 git add .
-git commit -m "magicard"
+git commit -m "moreprojects"
 git push origin main
 
 pnpm run build
