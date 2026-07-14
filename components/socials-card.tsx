@@ -13,7 +13,6 @@ import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
-import { StatusBadge } from "@/components/status-badge"
 import {
   Tooltip,
   TooltipContent,
@@ -70,7 +69,6 @@ export function SocialsCard({
             className="object-cover"
             priority
           />
-          <StatusBadge className="absolute top-3 left-3 bg-background/90 backdrop-blur-sm" />
         </div>
 
         <div className="flex min-w-0 flex-col gap-2">
