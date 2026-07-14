@@ -74,13 +74,7 @@ export function SocialsCard({
         <div className="flex min-w-0 flex-col gap-2">
           <span className="truncate font-semibold">{title}</span>
           <span className="truncate text-sm text-muted-foreground">{subtitle}</span>
-          <div className="flex flex-wrap gap-1.5">
-            {skills.map((skill) => (
-              <Badge key={skill} variant="outline">
-                {skill}
-              </Badge>
-            ))}
-          </div>
+        
         </div>
 
         <TooltipProvider>
