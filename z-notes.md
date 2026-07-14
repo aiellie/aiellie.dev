@@ -1,5 +1,5 @@
 git add .
-git commit -m "socialscard"
+git commit -m "logo"
 git push origin main
 
 pnpm run build

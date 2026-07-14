@@ -11,6 +11,7 @@ import { HugeiconsIcon } from "@hugeicons/react"
 
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { StatusBadge } from "@/components/status-badge"
 import {
@@ -50,10 +51,12 @@ const socialLinks = [
 export function SocialsCard({
   title = "AIEllie",
   subtitle = "hello@aiellie.dev",
+  skills = ["Next.js", "React", "TypeScript"],
   className,
 }: {
   title?: string
   subtitle?: string
+  skills?: string[]
   className?: string
 }) {
   return (
@@ -67,12 +70,19 @@ export function SocialsCard({
             className="object-cover"
             priority
           />
+          <StatusBadge className="absolute top-3 left-3 bg-background/90 backdrop-blur-sm" />
         </div>
 
         <div className="flex min-w-0 flex-col gap-2">
           <span className="truncate font-semibold">{title}</span>
           <span className="truncate text-sm text-muted-foreground">{subtitle}</span>
-          <StatusBadge />
+          <div className="flex flex-wrap gap-1.5">
+            {skills.map((skill) => (
+              <Badge key={skill} variant="outline">
+                {skill}
+              </Badge>
+            ))}
+          </div>
         </div>
 
         <TooltipProvider>
