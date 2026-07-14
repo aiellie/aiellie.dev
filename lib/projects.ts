@@ -7,6 +7,7 @@ export type Project = {
   repoUrl?: string
   status: string
   accent: string
+  featured?: boolean
 }
 
 const labelTag = (label: string) =>
@@ -30,6 +31,7 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/aiellie/ui.aiellie.dev",
     status: "Live",
     accent: "from-blue-500 to-purple-500",
+    featured: true,
   },
   {
     slug: "avatar-generator",

@@ -1,10 +1,11 @@
 "use client"
 
 import * as React from "react"
-import { AiChat02Icon, ArrowUp02Icon, Cancel01Icon } from "@hugeicons/core-free-icons"
+import { ArrowUp02Icon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 
 import { cn } from "@/lib/utils"
+import { LogoIcon } from "@/components/logo"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Bubble, BubbleContent } from "@/components/ui/bubble"
@@ -84,34 +85,35 @@ export function AiellieChat() {
 
   return (
     <>
-      {/* Floating toggle button */}
-      <Button
-        size="icon-lg"
+      {/* Floating toggle button — the aiellie orb */}
+      <button
+        type="button"
         onClick={() => setOpen((o) => !o)}
         aria-label={open ? "Close chat" : "Chat with aiellie"}
-        className="fixed right-5 bottom-5 z-50 size-12 rounded-full shadow-lg"
+        aria-expanded={open}
+        className={cn(
+          "group fixed right-5 bottom-5 z-50 rounded-full outline-none transition-transform duration-200 hover:scale-110 focus-visible:ring-3 focus-visible:ring-ring/50",
+          open && "scale-95"
+        )}
       >
-        <HugeiconsIcon
-          icon={open ? Cancel01Icon : AiChat02Icon}
-          strokeWidth={2}
-          className="size-5"
-        />
-      </Button>
+        <LogoIcon className="size-12 drop-shadow-lg" />
+      </button>
 
       {/* Chat panel */}
       <div
         className={cn(
-          "fixed right-5 bottom-20 z-50 flex h-[28rem] w-[calc(100vw-2.5rem)] max-w-sm flex-col overflow-hidden rounded-2xl border bg-background shadow-xl transition-all duration-200",
+          "fixed right-5 bottom-20 z-50 flex h-[28rem] max-h-[calc(100dvh-6.5rem)] w-[calc(100vw-2.5rem)] max-w-sm flex-col overflow-hidden rounded-2xl border bg-background shadow-xl transition-all duration-200",
           open
             ? "translate-y-0 opacity-100"
             : "pointer-events-none translate-y-2 opacity-0"
         )}
       >
-        <div className="flex items-center gap-2 border-b px-4 py-3">
-          <span className="size-2 rounded-full bg-emerald-500" />
-          <div className="flex flex-col">
+        <div className="group flex items-center gap-2.5 border-b px-4 py-3">
+          <LogoIcon className="size-8" />
+          <div className="flex flex-col gap-0.5">
             <span className="text-sm font-semibold leading-none">aiellie</span>
-            <span className="text-xs text-muted-foreground">
+            <span className="flex items-center gap-1 text-xs text-muted-foreground">
+              <span className="size-1.5 rounded-full bg-emerald-500" />
               ellie&apos;s ai agent
             </span>
           </div>
