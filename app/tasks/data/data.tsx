@@ -50,6 +50,11 @@ export const statuses = [
     label: "Canceled",
     icon: CircleOffIcon,
   },
+  {
+    value: "ongoing",
+    label: "Ongoing",
+    icon: Timer01Icon,
+  },
 ]
 
 export const priorities = [
