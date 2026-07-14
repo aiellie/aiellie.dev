@@ -1,5 +1,5 @@
 git add .
-git commit -m "modeswitcher"
+git commit -m "socialscard"
 git push origin main
 
 pnpm run build
