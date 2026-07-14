@@ -25,7 +25,7 @@ const socialLinks = [
     external: true,
   },
   {
-    href: "https://x.com/aiellie",
+    href: "https://x.com/aielliedev",
     label: "X",
     icon: NewTwitterIcon,
     external: true,
