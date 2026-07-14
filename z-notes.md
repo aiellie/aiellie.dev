@@ -1,5 +1,5 @@
 git add .
-git commit -m "latency"
+git commit -m "socials"
 git push origin main
 
 pnpm run build
