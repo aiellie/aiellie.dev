@@ -1,5 +1,5 @@
 git add .
-git commit -m "footer"
+git commit -m "magicard"
 git push origin main
 
 pnpm run build

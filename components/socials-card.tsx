@@ -8,7 +8,7 @@ import {
   NewTwitterIcon,
 } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
-
+import { MagicCard } from "@/components/ui/magic-card"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -19,6 +19,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+
 
 const socialLinks = [
   {
@@ -59,7 +60,8 @@ export function SocialsCard({
   className?: string
 }) {
   return (
-    <Card className={cn("w-full max-w-xs gap-0 rounded-3xl py-0 shadow-sm", className)}>
+    <MagicCard className={cn("w-full max-w-xs gap-0 rounded-3xl py-0 shadow-sm", className)}>
+      <Card>
       <CardContent className="flex flex-col gap-4 p-4">
         <div className="relative aspect-square overflow-hidden rounded-2xl">
           <Image
@@ -106,5 +108,6 @@ export function SocialsCard({
         </TooltipProvider>
       </CardContent>
     </Card>
+    </MagicCard>
   )
 }
