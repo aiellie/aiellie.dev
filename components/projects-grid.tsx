@@ -18,11 +18,17 @@ import { ProjectsToolbar } from "@/components/projects-toolbar"
 import { projects, type Project } from "@/lib/projects"
 import { cn } from "@/lib/utils"
 
-const statusOptions = [...new Set(projects.map((project) => project.status))]
+const visibleProjects = projects.filter((project) => !project.hide)
+
+const statusOptions = [
+  ...new Set(visibleProjects.map((project) => project.status)),
+]
   .sort()
   .map((status) => ({ label: status, value: status }))
 
-const tagOptions = [...new Set(projects.flatMap((project) => project.tags))]
+const tagOptions = [
+  ...new Set(visibleProjects.flatMap((project) => project.tags)),
+]
   .sort((a, b) => a.localeCompare(b))
   .map((tag) => ({ label: tag, value: tag }))
 
@@ -65,7 +71,7 @@ export function ProjectsGrid({ className }: { className?: string }) {
   const [sorting, setSorting] = React.useState<SortingState>([])
 
   const table = useReactTable({
-    data: projects,
+    data: visibleProjects,
     columns,
     state: {
       sorting,
@@ -95,9 +101,9 @@ export function ProjectsGrid({ className }: { className?: string }) {
       <div className="flex items-baseline justify-between">
         <h2 className="text-sm font-semibold tracking-tight">Projects</h2>
         <span className="text-xs text-muted-foreground">
-          {visibleCount === projects.length
-            ? `${projects.length} shipped`
-            : `${visibleCount} of ${projects.length}`}
+          {visibleCount === visibleProjects.length
+            ? `${visibleProjects.length} shipped`
+            : `${visibleCount} of ${visibleProjects.length}`}
         </span>
       </div>
 

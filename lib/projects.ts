@@ -8,6 +8,7 @@ export type Project = {
   status: string
   accent: string
   featured?: boolean
+  hide?: boolean
 }
 
 const labelTag = (label: string) =>
@@ -78,6 +79,7 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/aiellie/chat.aiellie.dev",
     status: "Live",
     accent: "from-cyan-500 to-blue-500",
+    hide: true,
   },
   {
     slug: "linderlabs-ui",
@@ -96,6 +98,7 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/aiellie/linderlabs-ui",
     status: "Live",
     accent: "from-violet-500 to-purple-500",
+    hide: true,
   },
   {
     slug: "linderlabs-ui-docs",
@@ -106,6 +109,7 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/politokk/linderlabs.ui",
     status: "Completed",
     accent: "from-indigo-500 to-violet-500",
+    hide: true,
   },
   {
     slug: "playellieai",
@@ -142,6 +146,7 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/aiellie/severance-match-game",
     status: "Completed",
     accent: "from-emerald-600 to-teal-600",
+    hide: true,
   },
   {
     slug: "oharas",
@@ -153,6 +158,7 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/aiellie/oharas",
     status: "Live",
     accent: "from-green-600 to-emerald-700",
+    hide: true,
   },
   {
     slug: "the-gpteamm",
@@ -162,6 +168,7 @@ export const projects: Project[] = [
     tags: [labelTag("website"), "WordPress", "SQL", "Elementor"],
     status: "Completed",
     accent: "from-sky-500 to-blue-600",
+    hide: true,
   },
   {
     slug: "gpt-plugins-portfolio",
@@ -172,6 +179,7 @@ export const projects: Project[] = [
     liveUrl: "https://gpt-plugins-portfolio.vercel.app/plugins",
     status: "Completed",
     accent: "from-fuchsia-500 to-pink-600",
+    hide: true,
   },
   {
     slug: "my-webchat",
@@ -182,5 +190,6 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/aiellie/my-webchat",
     status: "Completed",
     accent: "from-teal-500 to-emerald-500",
+    hide: true,
   },
 ]
