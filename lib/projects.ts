@@ -35,6 +35,25 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    slug: "aiellie-avatars",
+    title: "@aiellie/avatars",
+    description:
+      "The generation engine behind my avatar tools, published as a zero-dependency npm package with a CLI. Deterministic gradient, frosted-glass, and mesh-gradient SVGs — same seed, same image, with hash regression locks in the test suite so avatars can never silently change.",
+    tags: [
+      "npm",
+      "TypeScript",
+      "CLI",
+      "Vitest",
+      "GitHub Actions",
+      "SVG",
+    ],
+    liveUrl: "https://www.npmjs.com/package/@aiellie/avatars",
+    repoUrl: "https://github.com/aiellie/aiellie.avatars",
+    status: "Live",
+    accent: "from-rose-400 to-amber-400",
+    featured: true,
+  },
+  {
     slug: "aiellie-ui",
     title: "AIEllie UI",
     description:

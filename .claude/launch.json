@@ -20,6 +20,17 @@
       ],
       "autoPort": true,
       "port": 3005
+    },
+    {
+      "name": "avatar",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": [
+        "--dir",
+        "/Users/stashd/Desktop/avatar.aiellie",
+        "dev"
+      ],
+      "autoPort": true,
+      "port": 3006
     }
   ]
 }

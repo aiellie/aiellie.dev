@@ -1,5 +1,5 @@
 git add .
-git commit -m "lensaiellieurl"
+git commit -m "npmavatarpackageproject"
 git push origin main
 
 pnpm run build
