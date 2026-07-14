@@ -1,5 +1,5 @@
 git add .
-git commit -m "logo"
+git commit -m "prok"
 git push origin main
 
 pnpm run build
