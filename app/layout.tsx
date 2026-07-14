@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google"
+import { Analytics } from "@vercel/analytics/next"
 
 import "./globals.css"
 import { SiteHeader } from "@/components/site-header"
@@ -34,6 +35,7 @@ export default function RootLayout({
           </div>
           <AiellieChat />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )

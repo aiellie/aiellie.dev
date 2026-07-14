@@ -16,6 +16,23 @@ const labelTag = (label: string) =>
 
 export const projects: Project[] = [
   {
+    slug: "aiellie-ui",
+    title: "AIEllie UI",
+    description:
+      "A shadcn registry of 170+ installable components — including 100+ original AI, code, media, voice, and brand components for building AI products, all installable via the shadcn CLI.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+    ],
+    liveUrl: "https://ui.aiellie.dev",
+    repoUrl: "https://github.com/aiellie/ui.aiellie.dev",
+    status: "Live",
+    accent: "from-blue-500 to-purple-500",
+    featured: true,
+  },
+  {
     slug: "lens",
     title: "Lens",
     description:
@@ -51,23 +68,6 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/aiellie/aiellie.avatars",
     status: "Live",
     accent: "from-rose-400 to-amber-400",
-    featured: true,
-  },
-  {
-    slug: "aiellie-ui",
-    title: "AIEllie UI",
-    description:
-      "A shadcn registry of 170+ installable components — including 100+ original AI, code, media, voice, and brand components for building AI products, all installable via the shadcn CLI.",
-    tags: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "shadcn/ui",
-    ],
-    liveUrl: "https://ui.aiellie.dev",
-    repoUrl: "https://github.com/aiellie/ui.aiellie.dev",
-    status: "Live",
-    accent: "from-blue-500 to-purple-500",
     featured: true,
   },
   {

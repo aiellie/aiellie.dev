@@ -1,5 +1,5 @@
 git add .
-git commit -m "npmavatarpackageproject"
+git commit -m "aiellieui"
 git push origin main
 
 pnpm run build
