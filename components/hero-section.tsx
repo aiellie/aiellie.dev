@@ -15,7 +15,7 @@ export function HeroSection({ className }: { className?: string }) {
       </h1>
       <p className="max-w-md text-muted-foreground">
         Designer and developer building fast, thoughtful things for the web.
-        Currently based in New York.
+        Currently based in New York/Remote.
       </p>
     </div>
   )
