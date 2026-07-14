@@ -16,10 +16,28 @@ const labelTag = (label: string) =>
 
 export const projects: Project[] = [
   {
+    slug: "lens",
+    title: "Lens",
+    description:
+      "An AI design-review agent. Drop in a screenshot and watch it work: it verifies every contrast claim with real WCAG math, computes accessible color fixes at the same hue, and streams a scored verdict — an agentic tool loop, not a chat wrapper. UI built entirely from AIEllie UI components.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Anthropic SDK",
+      "Agents",
+      "AIEllie UI",
+      "Accessibility",
+    ],
+    repoUrl: "https://github.com/aiellie/lens.aiellie.dev",
+    status: "New",
+    accent: "from-teal-400 to-cyan-500",
+    featured: true,
+  },
+  {
     slug: "aiellie-ui",
     title: "AIEllie UI",
     description:
-      "A registry of 131 copy-paste UI components for building AI products — chat interfaces, auth forms, media, code blocks, and voice — all installable via the shadcn CLI.",
+      "A shadcn registry of 170+ installable components — including 100+ original AI, code, media, voice, and brand components for building AI products, all installable via the shadcn CLI.",
     tags: [
       "Next.js",
       "TypeScript",
@@ -59,7 +77,7 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/politokk/stashd2",
     status: "Live",
     accent: "from-rose-500 to-pink-500",
-    featured: true,
+    hide: true,
   },
   {
     slug: "chat-ai",

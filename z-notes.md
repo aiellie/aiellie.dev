@@ -1,5 +1,5 @@
 git add .
-git commit -m "projectsgrid"
+git commit -m "lensaiellie"
 git push origin main
 
 pnpm run build
