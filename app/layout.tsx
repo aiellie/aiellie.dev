@@ -4,6 +4,7 @@ import "./globals.css"
 import { SiteHeader } from "@/components/site-header"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils"
+import { SiteFooter } from "@/components/site-footer"
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'})
 
@@ -28,6 +29,7 @@ export default function RootLayout({
           <div className="flex min-h-svh flex-col">
             <SiteHeader />
             <main className="flex flex-1 flex-col">{children}</main>
+            <SiteFooter />
           </div>
         </ThemeProvider>
       </body>

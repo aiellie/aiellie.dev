@@ -56,28 +56,34 @@ export function ProjectCard({
 
       <div className="p-5">
         <div className="flex items-start justify-between gap-3">
-          <a
-            href={liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group/title inline-flex items-center gap-1.5 hover:opacity-80"
-          >
+          {liveUrl ? (
+            <a
+              href={liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group/title inline-flex items-center gap-1.5 hover:opacity-80"
+            >
+              <h3 className="font-semibold tracking-tight">{title}</h3>
+              <HugeiconsIcon
+                icon={ArrowUpRight01Icon}
+                strokeWidth={2}
+                className="size-4 shrink-0 text-muted-foreground transition-transform group-hover/title:-translate-y-0.5 group-hover/title:translate-x-0.5"
+              />
+            </a>
+          ) : (
             <h3 className="font-semibold tracking-tight">{title}</h3>
-            <HugeiconsIcon
-              icon={ArrowUpRight01Icon}
-              strokeWidth={2}
-              className="size-4 shrink-0 text-muted-foreground transition-transform group-hover/title:-translate-y-0.5 group-hover/title:translate-x-0.5"
-            />
-          </a>
-          <a
-            href={repoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="View source"
-            className="inline-flex size-9 shrink-0 items-center justify-center rounded-lg border bg-background transition-colors hover:bg-accent"
-          >
-            <HugeiconsIcon icon={Github01Icon} className="size-4.5" />
-          </a>
+          )}
+          {repoUrl ? (
+            <a
+              href={repoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View source"
+              className="inline-flex size-9 shrink-0 items-center justify-center rounded-lg border bg-background transition-colors hover:bg-accent"
+            >
+              <HugeiconsIcon icon={Github01Icon} className="size-4.5" />
+            </a>
+          ) : null}
         </div>
         <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
           {description}

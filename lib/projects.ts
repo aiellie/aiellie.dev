@@ -3,8 +3,8 @@ export type Project = {
   title: string
   description: string
   tags: string[]
-  liveUrl: string
-  repoUrl: string
+  liveUrl?: string
+  repoUrl?: string
   status: string
   accent: string
 }
@@ -104,5 +104,76 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/aiellie/my-webchat",
     status: "Completed",
     accent: "from-teal-500 to-emerald-500",
+  },
+  {
+    slug: "playellieai",
+    title: "playellieai",
+    description: "Free classic games in your browser. No installs, no signups.",
+    tags: [
+      labelTag("game"),
+      "Next.js",
+      "Tailwind CSS",
+      "Vercel",
+      "TypeScript",
+    ],
+    liveUrl: "https://playellieai.vercel.app",
+    repoUrl: "https://github.com/aiellie/playellieai",
+    status: "Ongoing",
+    accent: "from-lime-500 to-green-500",
+  },
+  {
+    slug: "severance-match-game",
+    title: "Severance Match",
+    description:
+      "A 2048-style game featuring characters from the Apple TV+ show Severance",
+    tags: [
+      labelTag("game"),
+      "Next.js",
+      "Tailwind CSS",
+      "Vercel",
+      "React",
+      "TypeScript",
+    ],
+    liveUrl: "https://severance-match-game.vercel.app",
+    repoUrl: "https://github.com/aiellie/severance-match-game",
+    status: "Completed",
+    accent: "from-emerald-600 to-teal-600",
+  },
+  {
+    slug: "oharas",
+    title: "O'Hara's",
+    description:
+      "A friendly NYC neighborhood Pub since 1983, serving the Financial District",
+    tags: [
+      labelTag("website"),
+      "Next.js",
+      "Tailwind CSS",
+      "Vercel",
+      "React",
+      "TypeScript",
+    ],
+    liveUrl: "https://oharas.vercel.app",
+    repoUrl: "https://github.com/aiellie/oharas",
+    status: "Completed",
+    accent: "from-green-600 to-emerald-700",
+  },
+  {
+    slug: "the-gpteamm",
+    title: "The GPTeam",
+    description:
+      "A searchable directory of GPT plugins and resources with reviews, ratings, and categories.",
+    tags: [labelTag("website"), "WordPress", "SQL", "Elementor"],
+    status: "Completed",
+    accent: "from-sky-500 to-blue-600",
+  },
+  {
+    slug: "gpt-plugins-portfolio",
+    title: "GPT Plugins Portfolio",
+    description:
+      "A showcase of shipped OpenAI plugins — Amazon Finds, GPT Finder, eBay Finds, AIimage, and more.",
+    tags: [labelTag("plugin"), "OpenAI", "Next.js", "Vercel"],
+    liveUrl: "https://gpt-plugins-portfolio.vercel.app/plugins",
+    status: "Completed",
+    accent: "from-fuchsia-500 to-pink-600",
   },
 ]

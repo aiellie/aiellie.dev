@@ -1,5 +1,5 @@
 git add .
-git commit -m "projectcards"
+git commit -m "footer"
 git push origin main
 
 pnpm run build
