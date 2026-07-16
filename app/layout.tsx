@@ -1,11 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 
-import "./globals.css"
-import { SiteHeader } from "@/components/site-header"
+import "@/app/globals.css"  
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils"
-import { SiteFooter } from "@/components/site-footer"
 import { AiellieChat } from "@/components/aiellie-chat"
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'})
@@ -29,9 +27,7 @@ export default function RootLayout({
       <body >
         <ThemeProvider>
           <div className="flex min-h-svh flex-col">
-            <SiteHeader />
             <main className="flex flex-1 flex-col">{children}</main>
-            <SiteFooter />
           </div>
           <AiellieChat />
         </ThemeProvider>

@@ -1,5 +1,5 @@
 git add .
-git commit -m "aiellieui"
+git commit -m "console"
 git push origin main
 
 pnpm run build
