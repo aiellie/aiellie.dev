@@ -1,7 +1,6 @@
-import { AppSidebar } from "@/components/app-sidebar"
-import { SiteHeader } from "@/components/site-header"
+import { AppSidebar } from "@/app/(main)/console/_components/sidebar/app-sidebar"
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar"
-
+import { SiteHeader } from "@/app/(main)/console/_components/sidebar/site-header"
 
 export default function Page() {
   return (
